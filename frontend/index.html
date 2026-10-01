@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FixMate - Home Services</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <!-- FIXMATE LOGO -->
+        <a href="#" class="logo">
+
+            <svg class="fixmate-icon"
+                 viewBox="0 0 100 100"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <!-- House Roof -->
+                <path
+                    d="M15 48 L50 18 L85 48"
+                    fill="none"
+                    stroke="#0f3b73"
+                    stroke-width="9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+
+                <!-- House -->
+                <path
+                    d="M25 45 V78 H75 V45"
+                    fill="none"
+                    stroke="#0f3b73"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                />
+
+                <!-- Orange Window -->
+                <rect
+                    x="43"
+                    y="45"
+                    width="14"
+                    height="14"
+                    rx="3"
+                    fill="#ff7a00"
+                />
+
+                <line
+                    x1="50"
+                    y1="45"
+                    x2="50"
+                    y2="59"
+                    stroke="white"
+                    stroke-width="2"
+                />
+
+                <line
+                    x1="43"
+                    y1="52"
+                    x2="57"
+                    y2="52"
+                    stroke="white"
+                    stroke-width="2"
+                />
+
+                <!-- Wrench -->
+                <path
+                    d="M39 69
+                    C34 64 34 57 39 52
+                    L45 58
+                    L51 52
+                    L57 58
+                    L51 64
+                    L57 70
+                    C52 75 45 75 39 69Z"
+                    fill="#0f3b73"
+                />
+
+                <!-- Orange Swoosh -->
+                <path
+                    d="M18 77 C35 91 68 87 83 68"
+                    fill="none"
+                    stroke="#ff7a00"
+                    stroke-width="6"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+            <span class="logo-text">
+                <span class="fix">Fix</span><span class="mate">Mate</span>
+            </span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+            <ul class="nav-links">
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#services">Services</a></li>
+
+                <li><a href="#features">Features</a></li>
+
+                <li><a href="#how-it-works">How It Works</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+
+
+        <!-- LOGIN / SIGNUP -->
+
+        <div class="nav-buttons">
+
+            <button class="login-btn">
+                Login
+            </button>
+
+            <button class="signup-btn">
+                Sign Up
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                Your Trusted Service Partner
+            </div>
+
+            <h1>
+                Everything You Need,
+                <span>Right at Your Doorstep.</span>
+            </h1>
+
+            <p>
+              Everything you need, from everyday home help to special occasions — trusted professionals,
+               easy booking, and reliable service, all in one place.
+            </p>
+   
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="serviceSearch"
+                    placeholder="What service do you need?"
+                >
+
+                <button onclick="searchService()">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="hero-buttons">
+
+                <button
+                    class="primary-btn"
+                    onclick="bookService()">
+
+                    Book a Service
+
+                </button>
+
+
+                <button
+                    class="secondary-btn"
+                    onclick="exploreServices()">
+
+                    Explore Services
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="section" id="services">
+
+        <div class="section-title">
+
+            <h2>Our Services</h2>
+
+            <p>
+                Everything you need, from everyday help to special occasions.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+            <!-- HOME CLEANING -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🧹
+                </div>
+
+                <h3>Home Cleaning</h3>
+
+                <p>
+                    Full home, room, kitchen, bathroom and deep cleaning.
+                </p>
+
+            </div>
+
+
+            <!-- LAUNDRY -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    👕
+                </div>
+
+                <h3>Laundry & Ironing</h3>
+
+                <p>
+                    Washing, ironing, folding and dry cleaning services.
+                </p>
+
+            </div>
+
+
+            <!-- COOKING -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🍳
+                </div>
+
+                <h3>Cooking & Personal Chef</h3>
+
+                <p>
+                    Daily cook, one-day cook, personal chef and event cooking.
+                </p>
+
+            </div>
+
+
+            <!-- WOMEN BEAUTY -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💇‍♀️
+                </div>
+
+                <h3>Women's Beauty</h3>
+
+                <p>
+                    Hair, facial, waxing, manicure, pedicure and makeup.
+                </p>
+
+            </div>
+
+
+            <!-- MEN GROOMING -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💇‍♂️
+                </div>
+
+                <h3>Men's Grooming</h3>
+
+                <p>
+                    Haircut, beard, shaving, facial and grooming services.
+                </p>
+
+            </div>
+
+
+            <!-- ELECTRICIAN -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ⚡
+                </div>
+
+                <h3>Electrician</h3>
+
+                <p>
+                    Lights, fans, switches, wiring, MCB and electrical work.
+                </p>
+
+            </div>
+
+
+            <!-- PLUMBER -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🚰
+                </div>
+
+                <h3>Plumber</h3>
+
+                <p>
+                    Tap, pipe, leakage, washbasin, toilet and plumbing work.
+                </p>
+
+            </div>
+
+
+            <!-- CARPENTER -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🪚
+                </div>
+
+                <h3>Carpenter</h3>
+
+                <p>
+                    Furniture, doors, cupboards and other woodwork services.
+                </p>
+
+            </div>
+
+
+            <!-- AC APPLIANCES -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ❄️
+                </div>
+
+                <h3>AC & Appliances</h3>
+
+                <p>
+                    AC, RO, refrigerator, washing machine, TV and appliance services.
+                </p>
+
+            </div>
+
+
+            <!-- PEST CONTROL -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🪳
+                </div>
+
+                <h3>Pest Control</h3>
+
+                <p>
+                    Cockroach, termite, ants, bed bugs and pest control.
+                </p>
+
+            </div>
+
+
+            <!-- HOME IMPROVEMENT -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎨
+                </div>
+
+                <h3>Home Improvement</h3>
+
+                <p>
+                    Painting, waterproofing, decoration and home upgrades.
+                </p>
+
+            </div>
+
+
+            <!-- VEHICLE -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🚗
+                </div>
+
+                <h3>Vehicle Services</h3>
+
+                <p>
+                    Car and bike cleaning and basic at-home vehicle care.
+                </p>
+
+            </div>
+
+
+            <!-- WEDDING -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💍
+                </div>
+
+                <h3>Wedding Services</h3>
+
+                <p>
+                    Makeup, mehndi, chef, decoration, photography and event staff.
+                </p>
+
+            </div>
+
+
+            <!-- EVENTS -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎉
+                </div>
+
+                <h3>Events & Parties</h3>
+
+                <p>
+                    Birthday, anniversary, engagement and corporate event services.
+                </p>
+
+            </div>
+
+
+            <!-- MOVING -->
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📦
+                </div>
+
+                <h3>Moving & Packing</h3>
+
+                <p>
+                    Packing, unpacking, loading and house shifting assistance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="section features-section" id="features">
+
+        <div class="section-title">
+
+            <h2>Why Choose FixMate?</h2>
+
+            <p>
+                Smart features that make booking services easier.
+            </p>
+
+        </div>
+
+
+        <div class="features-grid">
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🤖
+                </div>
+
+                <h3>AI Service Finder</h3>
+
+                <p>
+                    Describe your problem and FixMate can suggest the right service.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    💰
+                </div>
+
+                <h3>Smart Price Estimate</h3>
+
+                <p>
+                    Get an estimated price before booking your service.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📸
+                </div>
+
+                <h3>Before & After Proof</h3>
+
+                <p>
+                    View service progress through before and after photos.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📅
+                </div>
+
+                <h3>Flexible Booking</h3>
+
+                <p>
+                    Choose instant, scheduled, hourly, one-day or recurring bookings.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ✅
+                </div>
+
+                <h3>Trusted Professionals</h3>
+
+                <p>
+                    Connect with verified and trained service professionals.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🆘
+                </div>
+
+                <h3>Support & Complaints</h3>
+
+                <p>
+                    Get help and raise complaints directly through FixMate.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="section" id="how-it-works">
+
+        <div class="section-title">
+
+            <h2>How FixMate Works</h2>
+
+            <p>
+                Book your service in just a few simple steps.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">1</div>
+
+                <h3>Choose Service</h3>
+
+                <p>
+                    Select the service you need.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">2</div>
+
+                <h3>Select Date & Time</h3>
+
+                <p>
+                    Choose a convenient time for your service.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">3</div>
+
+                <h3>Get a Professional</h3>
+
+                <p>
+                    FixMate matches you with an available professional.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">4</div>
+
+                <h3>Service Completed</h3>
+
+                <p>
+                    Get your service and provide feedback.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <h2>
+            Need a Service?
+        </h2>
+
+        <p>
+            Find the right professional for your needs with FixMate.
+        </p>
+
+        <button
+            class="primary-btn"
+            onclick="bookService()">
+
+            Book a Service
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer" id="contact">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3 class="footer-logo">
+                    <span class="fix">Fix</span><span>Mate</span>
+                </h3>
+
+                <p>
+                    Your trusted platform for home services,
+                    personal care and events.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Company</h3>
+
+                <ul>
+
+                    <li><a href="#">About Us</a></li>
+
+                    <li><a href="#">Careers</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>Services</h3>
+
+                <ul>
+
+                    <li><a href="#services">Home Services</a></li>
+
+                    <li><a href="#services">Beauty</a></li>
+
+                    <li><a href="#services">Cooking</a></li>
+
+                    <li><a href="#services">Events</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li><a href="#">Help Center</a></li>
+
+                    <li><a href="#">Complaints</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 FixMate. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
