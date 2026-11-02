@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixMate - Book a Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="booking-section">
+
+        <div class="booking-container">
+
+            <h1>Book Your Service</h1>
+
+            <p>Fill in your details to book a trusted professional.</p>
+
+            <form id="bookingForm">
+
+                <label>Full Name</label>
+                <input type="text" id="customerName"
+                    placeholder="Enter your name" required>
+
+                <label>Mobile Number</label>
+                <input type="tel" id="mobile"
+                    placeholder="Enter mobile number"
+                    pattern="[0-9]{10}" required>
+
+                <label>Select Service</label>
+                <select id="service" required>
+                    <option value="">Choose a service</option>
+                    <option>Home Cleaning</option>
+                    <option>Laundry & Ironing</option>
+                    <option>Cooking & Personal Chef</option>
+                    <option>Women's Beauty</option>
+                    <option>Men's Grooming</option>
+                    <option>Electrician</option>
+                    <option>Plumber</option>
+                    <option>Carpenter</option>
+                    <option>AC & Appliances</option>
+                    <option>Pest Control</option>
+                    <option>Home Improvement</option>
+                    <option>Vehicle Services</option>
+                    <option>Wedding Services</option>
+                    <option>Events & Parties</option>
+                    <option>Moving & Packing</option>
+                </select>
+
+                <label>Select Date</label>
+                <input type="date" id="bookingDate" required>
+
+                <label>Select Time</label>
+                <input type="time" id="bookingTime" required>
+
+                <label>Full Address</label>
+                <textarea id="address"
+                    placeholder="Enter your complete address"
+                    required></textarea>
+
+                <button type="submit" class="primary-btn">
+                    Confirm Booking
+                </button>
+
+            </form>
+
+            <a href="index.html" class="back-link">
+                Back to Home
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

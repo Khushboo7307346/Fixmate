@@ -574,3 +574,140 @@ input {
         font-size: 27px;
     }
 }
+/* ================= BOOKING PAGE ================= */
+
+.booking-section {
+    min-height: 100vh;
+    background: #f1f5f9;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-container {
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.booking-container h1 {
+    color: #0f3b73;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.booking-container p {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.booking-container label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.booking-container input,
+.booking-container select,
+.booking-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.booking-container textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.booking-container button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #0f3b73;
+    text-decoration: none;
+}
+
+/* ================= BOOKING SUCCESS PAGE ================= */
+
+.success-section {
+    min-height: 100vh;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.success-container {
+    background: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    background: #dcfce7;
+    color: #16a34a;
+    border-radius: 50%;
+    font-size: 40px;
+    margin: 0 auto 20px;
+}
+
+.success-container h1 {
+    color: #0f3b73;
+}
+
+.success-container > p {
+    color: #64748b;
+    margin: 15px 0 25px;
+}
+
+.booking-details {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.booking-details h3 {
+    color: #0f3b73;
+    margin-bottom: 15px;
+}
+
+.booking-details p {
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.home-link {
+    display: inline-block;
+    background: #ff7a00;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+}
